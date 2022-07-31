@@ -57,3 +57,7 @@ cds watch
 
 <img src="./assets/images/cds-watch.png" width="700" />
 
+The project is not started yet, as there is no contents.
+
+Next Steps: [Define the service for my-bookshop](define-my-bookshop-service.md)
+
