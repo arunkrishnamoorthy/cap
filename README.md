@@ -14,3 +14,11 @@ CAP framework uses Open Source and SAP technologies. Cap Mainly consists of:
 2. Service SDK 
 3. Runtime for Node JS and JAVA
 
+Read Detailed information about the [Cloud Application Programming(CAP)](https://cap.cloud.sap/docs/about/#overview) from the standard documentation.
+
+To Summarize in short, SAP uses the Open Source technologies and safegaurd user investment by allowing us to quickly adapt to the new emerging technologies, providing platform specific deployment and authentication strategies. 
+
+ - Synchronous with protocols like OData, REST and GraphQL.
+ - Supports Asynchronous Channel and Brokers like SAP Event Mesh, Kafka and MQ.
+ - Supports different database technologies including SQL and NO SQL. 
+
