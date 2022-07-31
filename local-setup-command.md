@@ -24,7 +24,10 @@ To verify CDS Version installed in the VS Code, run the command below to verify 
 cds -v
 ```
 
+You can see the CAP version, installed on your device. 
+
 ![cds-version](./assets/images/cap-version.png)
+
 
 
 
