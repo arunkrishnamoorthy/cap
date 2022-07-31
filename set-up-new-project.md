@@ -20,9 +20,13 @@ This command creates a directory called my-bookshop in the current directory whe
 
 <img src="./assets/images/init-project-mybookshop.png" width="700" />
 
-A new project is created, with the following structure. 
+After initializing the project, you should see the following folders.
 
 <img src="./assets/images/project-structure.png" width="700px" />
+
+- app : For UI artifacts 
+- db  : For database level schema models 
+- src : Service definition layer
 
 #### Step 2: Install Dependencies 
 
@@ -51,5 +55,5 @@ It enables live reload on the browser and whenever there is a change in the proj
 cds watch
 ```
 
-<img src="./assets/images/cds-watch.png" />
+<img src="./assets/images/cds-watch.png" width="700" />
 
