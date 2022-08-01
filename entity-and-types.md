@@ -189,6 +189,10 @@ entity Book {
 
 > While deploying the service, In the OData V4, the Array typed structures are referenced as a Collections. 
 
+**Null Values** 
+
+By default, all the elements specified in the array type is not null, you can specify them explicity using the keywords null and not null. 
+
 
 
 
