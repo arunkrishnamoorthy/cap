@@ -11,8 +11,7 @@ Aspect oriented programming, is a technique for building common,reusable routine
 - Define Aspect 
 - Extend Directive 
 - Short Syntax 
-- Inheritance 
-\
+
 ### Define Aspect
 
 To define an aspect, the key word ``` define aspect ``` is used by specifying the name of the aspect. The Keyword define is optional and the keyword aspect can be used without define keyword to define an aspect. 
@@ -167,10 +166,8 @@ The new short representation will looks like below.
   }
  ```
 
-**Inheritance**
-
-From the short syntax representation, it looks like a multiple inheritance where the entity foo, inherits the properties from the managedObject, someObject and dummyObject. While this isn't exactly inheritance, rather based on the concept of mixins. 
+> From the short syntax representation, it looks like a multiple inheritance where the entity foo, inherits the properties from the managedObject, someObject and dummyObject. While this isn't exactly inheritance, rather based on the concept of mixins. 
 
 
-> For more information, refer help links for [Extend Directive](extend-directive.md) and [Annotate Directive](annotate-directive.md).
+For more information, refer help links for [Extend Directive](extend-directive.md) and [Annotate Directive](annotate-directive.md).
 
