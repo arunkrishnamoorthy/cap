@@ -187,6 +187,7 @@ entity Book {
 }
 ```
 
+> While deploying the service, In the OData V4, the Array typed structures are referenced as a Collections. 
 
 
 
