@@ -12,8 +12,7 @@ Aspect oriented programming, is a technique for building common,reusable routine
 - Extend Directive 
 - Short Syntax 
 - Inheritance 
-- Views and Projection 
-
+\
 ### Define Aspect
 
 To define an aspect, the key word ``` define aspect ``` is used by specifying the name of the aspect. The Keyword define is optional and the keyword aspect can be used without define keyword to define an aspect. 
@@ -66,4 +65,112 @@ If you use the ```annotate```  keyword to named aspect, then the nested fields a
 annotate foo with managedObject;
 ```
 
+#### Extend Directive 
+
+The ```extend``` keyword is used to add new fields to the entity or overwrite the properties / annotations of the existing field. 
+
+Let us assume we have an entity "foo" with an existing field and annotation for title. 
+
+```
+entity foo with @title: 'Foo' {
+   existingField: String;
+}
+```
+
+To add a new field to the entity. 
+
+```
+extend foo with @title: 'Foo' {
+  newField: String;
+}
+```
+
+So, to the existing entity Foo, we have added a new field. 
+
+Now, lets say the entity i have is using an aspect managedObject to extend fields to the entity "Foo". If i wanted to overwrite the properties, the we specify the syntax as following. 
+
+```
+entity foo with @title: 'Foo' 
+  extend foo with managedObject  
+{
+  existingField: String;
+}
+```
+
+To extend the field from the Aspect, use the following syntax. 
+
+```
+  entity foo with @title: 'Foo' {
+    extend managedObject {
+      // New Field
+      newField: String; 
+      
+      // Overwrite existing properties
+      extend created @title 'Created Date and Time'
+    }
+  }
+```
+
+This can be shortly represented for single fields as:
+
+```
+  extend foo: managedObject with { newField: String }
+```
+
+For more details on the usage, refer to short syntax section. 
+
+**Short Syntax**
+
+Instead of declaring the extend keyword everytime to extend the aspect, we can use the short syntax ```:``` to represent the extension. 
+
+Let's assume we have entity with the name "Foo" and has properties "Key" and "Name" defined as below. 
+```
+define foo with @title: 'Foo' {
+  Key: CUID,
+  Name: String
+}
+```
+
+Now to add the properties of the managedObject aspect, we modify the syntax as below. 
+
+```
+  define entity Foo {}
+  extend foo with managedObject;
+  extend foo with {
+    Key: CUID;
+    Name: String;
+  }
+```
+
+Here we declare an entity Foo which is initially empty and then added properties to it with Aspect "managedObject" and properties "Key" and "Name".
+Now if there are going to be more aspect from which we are going to inherit properties then the syntax definition grow as this. 
+
+``` 
+define Foo {} 
+  extend Foo with managedObject;
+  extend Foo with someObject; 
+  extend Foo with dummyObject; 
+  extend Foo with {
+    Key: CUID;
+    Name: String;
+  }
+```
+
+Now rather than listing all the aspects that are used in the extension, they can be simplied by the use of ```:``` in the syntax representation. 
+
+The new short representation will looks like below. 
+
+```
+  define foo : managedObject, someObject, dummyObject {
+    Key: CUID;
+    Name: String;
+  }
+ ```
+
+**Inheritance**
+
+From the short syntax representation, it looks like a multiple inheritance where the entity foo, inherits the properties from the managedObject, someObject and dummyObject. While this isn't exactly inheritance, rather based on the concept of mixins. 
+
+
+> For more information, refer help links for [Extend Directive](extend-directive.md) and [Annotate Directive](annotate-directive.md).
 
