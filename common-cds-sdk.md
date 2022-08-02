@@ -124,3 +124,18 @@ Temporal aspect captures the valid from and valid to Data.
 ```
 
 
+### Annotation 
+
+The Entites are annotated in the common CDS view inorder to provide built in value list for Fiori Elements. 
+
+Following are the annotations maintained for the **Entities**
+
+**Code List** 
+
+```
+  annotate sap.common.CodeList with @UI.Identification: [{Value: name}];
+  annotate sap.common.CodeList with @cds.odata.valuelist;
+```
+
+
+
