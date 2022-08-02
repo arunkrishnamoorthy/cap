@@ -79,4 +79,48 @@ context sap.common {
 
 ```
 
+### Aspects 
+
+The common cds view has the following aspects. 
+
+1. CUID 
+2. Managed 
+3. Temporal 
+
+**CUID**: 
+Provides an Universal ID, automatically filled in. 
+
+```
+aspect cuid: {
+  key ID: UUID; // automatically filled in 
+}
+``
+
+**Managed**:
+
+```
+/* 
+ * Aspect to capture user name and time
+ */
+aspect managed {
+  createdAt: Timestamp @cds.on.insert: $now;
+  createdBy: User @cds.on.insert: $user;
+  modifiedAt: Timestamp @cds.on.insert: $now @cds.on.update: $now;
+  modifiedBy: User @cds.on.insert: $user @cds.on.update: $user;
+}
+```
+
+By using this managed aspect in your entity, you entity tracks the user and time in which the data is manipulated by default. 
+
+**Temporal**
+
+Temporal aspect captures the valid from and valid to Data. 
+
+```
+  aspect temporal {
+    validFrom: Timestamp @cds.valid.from;
+    validTo: Timestamp @cds.valid.to;
+  }
+```
+
 
