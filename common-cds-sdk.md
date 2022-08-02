@@ -94,7 +94,7 @@ Provides an Universal ID, automatically filled in.
 aspect cuid: {
   key ID: UUID; // automatically filled in 
 }
-``
+```
 
 **Managed**:
 
