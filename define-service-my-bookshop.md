@@ -44,3 +44,25 @@ Click on Save.
 You can see the server started on the terminal console. 
 
 <img src="./assets/images/localhost.png" width="700" />
+
+In case if the session is already terminted and you want to restart, you can use the command ```cds serve``` or ```cds watch```.
+
+You can see the localhost server started with the endpoints. 
+
+<img src="./assets/images/service-result.png" width="700" />
+
+**Service Metadata** 
+
+Click on the link to $metadata to see the service metadata. 
+
+<img src="./assets/images/service-metadata.png" width="700" />
+
+For each of the entity generated as part of the service, a fiori preview is generated. 
+
+<img src="./assets/images/fiori-preview.png" width="700" />
+
+<img src="./assets/images/fiori-list-report.png" width="700" />
+
+We don't see anything at the moment, as we have not added any annotations yet. 
+
+
