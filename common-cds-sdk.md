@@ -57,4 +57,26 @@ The Common CDS View has 3 Entities which provides data and can be reused. All en
 The Aspect Code List is annotated with the auto expose and presistance features to avoid storing of data if un-used. 
 It has localized element name and description annotated with title. Read more about [Localization](localization.md).
 
+**Entity List**
+
+``` 
+context sap.common {
+  
+  entity Languages: CodeList {
+    key code: String(14) @(title: '{i18n>LanguageCode}');
+  }
+  
+  entity Countries: CodeList {
+    key code: String(3) @(title: '{i18n>CountryCode}');
+  }
+  
+  entity Currencies: CodeList {
+    key code: String(3) @(title: '{i18n>CurrencyCode}');
+        symbol: String(5) @(title: '{i18n>CurrencySymbol}');
+  }
+  
+}
+
+```
+
 
