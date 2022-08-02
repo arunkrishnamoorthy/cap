@@ -138,7 +138,7 @@ entity Book {
 
 you can relate this to the following ABAP statments if you are abap developer. 
 
-``` 
+```abap
   types: begin of EmailAddress,
           kind type string,
           address type string,
@@ -165,7 +165,7 @@ entity Book {
 
 In ABAP you can relate this to following statements. 
 
-```
+```abap
 types: begin of EmailAddress,
           kind type string,
           address type string,
@@ -178,7 +178,7 @@ So you get the Idea, you can use the inline declaration of Elements as well.
 
 
 ```
-type EmailAddressTable : many { kind: String, address: String };
+type EmailAddressTable : many { kind: String; address: String; };
 
 entity Book {
   key ID: CUID;
@@ -192,6 +192,30 @@ entity Book {
 **Null Values** 
 
 By default, all the elements specified in the array type is not null, you can specify them explicity using the keywords null and not null. 
+
+```
+type EmailAddressTable : many { kind: String null; address: String not null; };
+
+entity Book {
+  key ID: CUID;
+      Authors: many String;
+      Emails: EmailAddressTable;
+}
+```
+
+When the element is set to not null, each row need to have that element filled. 
+
+
+### Virtual Elements
+
+Virtual elements are properties added to the data model. These are usually computed values and not persited in the Database Tables, Views or SQL Database. 
+They are simply part of OData Metadata. 
+
+These elements are by default annotatedd with property ```@Core.Computed: true``` and hence not accessible in the custom handlers. To make the element accessible in the custom handler the annotation need to be modified to ```@Core.Computed: false```. Still these data are not persistable in database. 
+
+To add an element virtual, use the prefix ```virtual``` to the element name. 
+
+
 
 
 
