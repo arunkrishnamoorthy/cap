@@ -30,4 +30,7 @@ In the localhost server running click on the Books Entity link to see the data p
 
 <img src="./assets/images/books-entity.png" width="700" />
 
+
+**Data Preview** 
+
 <img src="./assets/images/books-mock-data.png" width="700" />
