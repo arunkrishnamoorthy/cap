@@ -55,5 +55,6 @@ The Common CDS View has 3 Entities which provides data and can be reused. All en
 ```
 
 The Aspect Code List is annotated with the auto expose and presistance features to avoid storing of data if un-used. 
-It has localized element name and description annotated with title. 
+It has localized element name and description annotated with title. Read more about [Localization](localization.md).
+
 
