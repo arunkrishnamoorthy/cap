@@ -137,5 +137,12 @@ Following are the annotations maintained for the **Entities**
   annotate sap.common.CodeList with @cds.odata.valuelist;
 ```
 
+**Languages, Currencies and Countries**
+
+```
+  annotate sap.common.Languages with { code @Common.Text: name; }
+  annotate sap.common.Currencies with { code @Common.Text: name; }
+  annotate sap.common.Countries with { code @Common.Text: name; }
+```
 
 
