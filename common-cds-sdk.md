@@ -145,4 +145,34 @@ Following are the annotations maintained for the **Entities**
   annotate sap.common.Countries with { code @Common.Text: name; }
 ```
 
+Following are the annotation for the types. 
+
+**Type**
+
+```
+  annotate User with @( 
+    title: '{i18n>UserID}',
+    description: '{i18n>UserID.Description}'
+  )
+```
+
+Similar annotation is given for language, currency and country. 
+
+Annotation for Managed as follows:
+
+```
+  annotate managed with @(
+    createdAt @title: '{i18n>CreatedAt}';
+    createdBy @title: '{i18n>CreatedBy}';
+    modifiedAt @title: '{i18n>ChangedAt}';
+    modifiedBy @title: '{i18n>ChangedBy}';
+  )
+```
+
+
+
+
+
+
+
 
