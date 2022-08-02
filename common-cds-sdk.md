@@ -41,4 +41,19 @@ If we want to use the any type from the Common CDS View, we need to import the t
   }
 ```
 
+### Entity
+
+The Common CDS View has 3 Entities which provides data and can be reused. All entity extend an aspect CodeList which can be used for your own code list. 
+
+**Aspect Code List** 
+```
+  aspect CodeList @(cds.autoexpose, cds.persistence.skip: 'if-unused'
+  {
+    name: localized String(255) @title: 'i18n>Name';
+    descr: localized String(1000) @title: 'i18n>Description';
+  }
+```
+
+The Aspect Code List is annotated with the auto expose and presistance features to avoid storing of data if un-used. 
+It has localized element name and description annotated with title. 
 
