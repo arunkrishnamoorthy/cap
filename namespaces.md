@@ -127,6 +127,10 @@ For example, if i have to delcare two cds views, Books and Authors, then i can h
 
 **Model Resolution** 
   
+  The Usage in CDS work much like ```require``` in **Node JS** and ```imports``` in **ES6**. 
+  
+  ***Relative Path Resolution***: the directive path with representation ./ or ../ refers to the path from current directory. 
+  ***Absolute Path Resolution***: the absolute path are resolved to the ```node_modules``` directing to the node js module imported in CAP.  
 
   
     
