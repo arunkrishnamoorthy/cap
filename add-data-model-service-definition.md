@@ -1,7 +1,7 @@
 # Add Data Model and Service Definition - My Bookshop Project
 
-# Prequisites
-  [Namespaces and Usage of Namespaces](namespaces.md)
+#### Prequisites
+  [Namespaces](namespaces.md)
 
 When [Defining the service](define-service-my-bookshop.md), we get started quickly and we added all the entity in service definition(CatalogService). But in real time situation 
 building a bigger project we might have to normalize your entity in different view and have the service expose the entity. 
