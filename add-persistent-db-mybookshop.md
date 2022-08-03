@@ -30,3 +30,8 @@ In the terminal , you can see the SQL Create Statements generated for each of th
 
 <img src="./assets/images/sql-lite-db-view.png" width="700" />
 
+Stop the local host server using control + c. and restart the server using cds watch. 
+
+Now we should be able to test our service for CRUD Operations. 
+
+SAP have provided a sample [postman collection](https://raw.githubusercontent.com/SAPDocuments/Tutorials/master/tutorials/cp-apm-nodejs-create-service/postman.json). You can import the postman collection and modify it as per your service and test it, or you can create the postman collection and configure on your own and test it. 
