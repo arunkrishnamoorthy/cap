@@ -29,3 +29,4 @@ sqlite3 db/my-bookshop.db -cmd .dump
 In the terminal , you can see the SQL Create Statements generated for each of the entitysets we defined. 
 
 <img src="./assets/images/sql-lite-db-view.png" width="700" />
+
