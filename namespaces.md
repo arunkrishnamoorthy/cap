@@ -116,7 +116,18 @@ For example, if i have to delcare two cds views, Books and Authors, then i can h
     using {Foo, Bar} from './DataModel';
   ```
   
+  In the declaration, in the nested context we have two entities Zoo and Car. Now to import both in to the view we can declare as following. 
   
+  ```
+    usage foo.bar.scoped.nested from './DataModel';
+    
+    entity Demo1: nested.Zoo {}
+    entity Demo2: nested.Car {}
+  ```
+
+**Model Resolution** 
+  
+
   
     
   
