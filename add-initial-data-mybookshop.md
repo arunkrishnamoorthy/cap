@@ -17,6 +17,15 @@ Hence the name of the CSV File i have created is ```mybookshop.db.bookmodel-Auth
 <img src="./assets/images/csv-file-location-bookshop.png" width="700" />
 
 The Authors entity has two properties named ```ID``` and ```name```. 
+The column needs to be seperated with a ```;```. 
+I have maintained data as below. 
+
+<img src="./assets/images/csv-data-bookshop.png" width="700" />
 
 > Sometimes for the changes to reflect we need to stop the server and restart it with command ```cds watch```.
 
+Restart the CDS Server and Click on Authors Entity to view the entity data. 
+
+**Result**
+
+<img src="./assets/images/author-entity-bookshop.png" width="700" />
