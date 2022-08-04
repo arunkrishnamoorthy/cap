@@ -8,11 +8,11 @@ I am going to populate the entity "Authors" with data from CSV files. Hence i am
 Next, create a CSV file in the db folder and add the data to the file. The name of the CSV file should follow this naming convention. 
 
 ``` 
-  <namespace>-<entity_name>
+  <namespace>-<entity_name>.csv
 ```
 
 In my application, i have given the namespace for the DataModel file as ```mybookshop.db.bookmodel``` and the entity name as ```Authors```. 
-Hence the name of the CSV File i have created is ```mybookshop.db.bookmodel-Authors```. This file can be in the same in the directory path as the Model or to organizae we can store the csv file inside a folder named csv within the same directory as model. The file can be in one of the location in below screenshot. I am adding my files in the csv folder.
+Hence the name of the CSV File i have created is ```mybookshop.db.bookmodel-Authors.csv```. This file can be in the same in the directory path as the Model or to organizae we can store the csv file inside a folder named csv within the same directory as model. The file can be in one of the location in below screenshot. I am adding my files in the csv folder.
 
 <img src="./assets/images/csv-file-location-bookshop.png" width="700" />
 
