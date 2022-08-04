@@ -59,5 +59,5 @@ cds watch
 
 The project is not started yet, as there is no contents.
 
-Next Steps: [Define the service for my-bookshop](define-my-bookshop-service.md)
+Next Steps: [Define the service for my-bookshop](define-service-my-bookshop.md)
 
