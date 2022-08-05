@@ -1,11 +1,11 @@
 # Entity and Types
 
-### Entity 
+### Entity
 
 Entity is a structured type with named and typed element, representing data set that can be read and manipulated using the CRUD operation in the service.
-Entity usually has one or more key fields. 
+Entity usually has one or more key fields.
 
-To define an entity, use the keword ```define entity```. 
+To define an entity, use the keword `define entity`.
 
 **Example**
 
@@ -14,7 +14,7 @@ define entity Book {
   key ID: CUID;
   Title: String;
   Author: String;
-} 
+}
 ```
 
 Or you can use the following since the define is optional keyword.
@@ -24,32 +24,32 @@ entity Book {
   key ID: CUID;
   Title: String;
   Author: String;
-} 
+}
 ```
 
-This statement defines an entity called Book with the properties ID, Title and Author. 
+This statement defines an entity called Book with the properties ID, Title and Author.
 
-Refer to the [Built in Data Types](built-in-data-type.md) to know more about the CAP predefined data types. 
-Alternatively you can also create your own types. 
+Refer to the [Built in Data Types](built-in-data-type.md) to know more about the CAP predefined data types.
+Alternatively you can also create your own types.
 
-### Type 
+### Type
 
-We can create custom types in the application for the reusability.  To create the custom type use the keyword ``` define type ```.
-Define is optional keyword and can be used with or without it. 
+We can create custom types in the application for the reusability. To create the custom type use the keyword `define type`.
+Define is optional keyword and can be used with or without it.
 
 **Example**
 
 ```
 define type Material: String(40);
 ```
-This is equivalent to creating a Domain in the SAP Server which holds the value for single component. 
+
+This is equivalent to creating a Domain in the SAP Server which holds the value for single component.
 
 Custom Defined types can also be dervied from Structures and associations.
 
 **Example**
 
-
-Deriving custom data types from association. 
+Deriving custom data types from association.
 
 ```
 define type Currency: Association to Currencies;
@@ -68,9 +68,9 @@ You can relate this to the Structure declaration in ABAP and specifying referenc
 
 #### Structured Type
 
-The Type Amount declared above is an example of a Structured Type. you can use it in the entity. 
+The Type Amount declared above is an example of a Structured Type. you can use it in the entity.
 
-``` 
+```
 type Currency: Association to Currencies;
 
 type Amount {
@@ -86,9 +86,9 @@ entity Book {
 }
 ```
 
-Here we use the structured type Amount as a reference to the Price property. So now we have Price.value which represent the value and Price.currency which represent currency of that amount.  You can relate this to adding nested structure in ABAP Programming. 
+Here we use the structured type Amount as a reference to the Price property. So now we have Price.value which represent the value and Price.currency which represent currency of that amount. You can relate this to adding nested structure in ABAP Programming.
 
-Rather than explicitly defining the type, we can also declare elements using inline syntax. 
+Rather than explicitly defining the type, we can also declare elements using inline syntax.
 
 ```
 entity Book {
@@ -104,24 +104,25 @@ entity Book {
 
 #### Arrayed Type
 
-A type specification ``` array of ``` or ``` many ``` is used to decalare arrayed types. With arrayed type a element can hold more than one values. 
+A type specification `array of` or `many` is used to decalare arrayed types. With arrayed type a element can hold more than one values.
 
-Following are some examples of arrayed type. 
+Following are some examples of arrayed type.
 
 ```
 entity Book {
   key ID: CUID;
       Authors: many String;
 }
-``` 
-This creates a deep structure with Authors as an Array holding multiple string values. 
-You can relate this to ABAP declaration specified below, where at the declaration level you specify the multiplicity of element. 
+```
+
+This creates a deep structure with Authors as an Array holding multiple string values.
+You can relate this to ABAP declaration specified below, where at the declaration level you specify the multiplicity of element.
 
 ```
 data: lt_authors type table of string.
 ```
 
-**More Examples** 
+**More Examples**
 
 ```
 type EmailAddress {
@@ -136,13 +137,13 @@ entity Book {
 }
 ```
 
-you can relate this to the following ABAP statments if you are abap developer. 
+you can relate this to the following ABAP statments if you are abap developer.
 
 ```abap
   types: begin of EmailAddress,
           kind type string,
           address type string,
-         end of EmailAddress. 
+         end of EmailAddress.
   data: lt_emails type table of EmailAddress.
 ```
 
@@ -163,19 +164,18 @@ entity Book {
 }
 ```
 
-In ABAP you can relate this to following statements. 
+In ABAP you can relate this to following statements.
 
 ```abap
 types: begin of EmailAddress,
           kind type string,
           address type string,
-         end of EmailAddress. 
+         end of EmailAddress.
 types: EmailAddressTable type table of EmailAddress.
 data: lt_emails type EmailAddressTable.
 ```
 
-So you get the Idea, you can use the inline declaration of Elements as well. 
-
+So you get the Idea, you can use the inline declaration of Elements as well.
 
 ```
 type EmailAddressTable : many { kind: String; address: String; };
@@ -187,11 +187,11 @@ entity Book {
 }
 ```
 
-> While deploying the service, In the OData V4, the Array typed structures are referenced as a Collections. 
+> While deploying the service, In the OData V4, the Array typed structures are referenced as a Collections.
 
-**Null Values** 
+**Null Values**
 
-By default, all the elements specified in the array type is not null, you can specify them explicity using the keywords null and not null. 
+By default, all the elements specified in the array type is not null, you can specify them explicity using the keywords null and not null.
 
 ```
 type EmailAddressTable : many { kind: String null; address: String not null; };
@@ -203,25 +203,13 @@ entity Book {
 }
 ```
 
-When the element is set to not null, each row need to have that element filled. 
-
+When the element is set to not null, each row need to have that element filled.
 
 ### Virtual Elements
 
-Virtual elements are properties added to the data model. These are usually computed values and not persited in the Database Tables, Views or SQL Database. 
-They are simply part of OData Metadata. 
+Virtual elements are properties added to the data model. These are usually computed values and not persited in the Database Tables, Views or SQL Database.
+They are simply part of OData Metadata.
 
-These elements are by default annotatedd with property ```@Core.Computed: true``` and hence not accessible in the custom handlers. To make the element accessible in the custom handler the annotation need to be modified to ```@Core.Computed: false```. Still these data are not persistable in database. 
+These elements are by default annotatedd with property `@Core.Computed: true` and hence not accessible in the custom handlers. To make the element accessible in the custom handler the annotation need to be modified to `@Core.Computed: false`. Still these data are not persistable in database.
 
-To add an element virtual, use the prefix ```virtual``` to the element name. 
-
-
-
-
-
-
-
-
-
-
-
+To add an element virtual, use the prefix `virtual` to the element name.
