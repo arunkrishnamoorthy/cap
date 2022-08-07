@@ -1,16 +1,26 @@
 - [Introduction](readme.md)
 - [Setting up Development Environment](local-setup-command.md)
+  - CLI
+  - Install Git
+  - Install Node.js
+  - Install SAP UI5 CLI
+  - Install Cloud Foundry CLI
+  - Add CAP Tooling
+  - Install VS Code
+  - Install VS Code Extensions
+  - Install SAP Fiori Tools Extension Pack
+  - Install yeoman
 - [Getting Started](getting-started.md)
-  - My Bookshop Project
+  - [My Bookshop Project](vs-extension-cap.md)
     - [Install VS Code extension](vs-extension-cap.md)
     - [Set up new project](set-up-new-project.md)
     - [Define your first service](define-service-my-bookshop.md)
     - [Provide mock data](add-mock-data-mybookshop.md)
-    - [Add Datamodel and Adapt service definition](add-data-model-service-definition.md)
+    - [Add Datamodel and service definition](add-data-model-service-definition.md)
     - [Add initial data](add-initial-data-mybookshop.md)
     - [Add SQLite Persistant database](add-persistent-db-mybookshop.md)
-    - [Test the service with Postman]
-    - [Add Custom logic to the service]
+    - [Test the service with Postman](test-with-postman.md)
+    - [Add Custom logic to the service](add-custom-logic-mybookshop.md)
   - [Another new project coming up]
 - Concepts
   - [Aspect](aspect.md)
