@@ -1,4 +1,4 @@
-- [Introduction](readme.md)
+- [Introduction](introduction.md)
 - [Setting up Development Environment](local-setup-command.md)
   - CLI
   - Install Git
