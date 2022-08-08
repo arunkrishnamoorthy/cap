@@ -1,17 +1,17 @@
 - [Introduction](introduction.md)
 - [Setting up Development Environment](local-setup-command.md)
-  - CLI
-  - Install Git
-  - Install Node.js
-  - Install SAP UI5 CLI
+  - [CLI](cli.md)
+  - [Install Git](install-git.md)
+  - [Install Node.js](install-node-js.md)
+  - [Install SAP UI5 CLI](install-ui5-cli.md)
   - Install Cloud Foundry CLI
-  - Add CAP Tooling
+  - CAP Tools
   - Install VS Code
-  - Install VS Code Extensions
+  - [Install VS Code Extensions](vs-extension-cap-v2.md)
   - Install SAP Fiori Tools Extension Pack
   - Install yeoman
 - [Getting Started](getting-started.md)
-  - [My Bookshop Project](vs-extension-cap.md)
+  - [My Bookshop Project](my-bookshop-project.md)
     - [Install VS Code extension](vs-extension-cap.md)
     - [Set up new project](set-up-new-project.md)
     - [Define your first service](define-service-my-bookshop.md)
