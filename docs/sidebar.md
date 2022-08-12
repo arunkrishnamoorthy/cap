@@ -28,3 +28,4 @@
   - [Entity and Types](entity-and-types.md)
   - [Localization](localization.md)
   - [Namespaces](namespaces.md)
+- [Create Basic App](create-basic-app.md)
