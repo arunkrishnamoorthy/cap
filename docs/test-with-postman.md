@@ -7,5 +7,7 @@ Host in which the server is running : http://localhost:4004
 Service Path:
 
 ```
-/catalog
+http://localhost:4004/catalog
 ```
+
+
