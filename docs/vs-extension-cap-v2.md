@@ -8,6 +8,6 @@ In this tutorial, you learn how to install the VS Code extension plugin to enabl
 
 #### Step 2: Install SAP CDS Language support extension.
 
-Search for the plugin SAP CDS Language support in the search bar and install the extension.
+Search for the plugin `SAP CDS Language support` in the search bar and install the extension.
 
 <img src="./assets/images/sap-cds-language-support.png" width="700"/>

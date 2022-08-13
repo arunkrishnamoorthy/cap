@@ -1,17 +1,17 @@
 - [Introduction](introduction.md)
-- [Setting up Development Environment](local-setup-command.md)
+- [Setting up Development Environment](set-up-development-environment.md)
   - [CLI](cli.md)
   - [Install Git](install-git.md)
   - [Install Node.js](install-node-js.md)
   - [Install SAP UI5 CLI](install-ui5-cli.md)
-  - Install Cloud Foundry CLI
-  - CAP Tools
-  - Install VS Code
-  - [Install VS Code Extensions](vs-extension-cap-v2.md)
-  - Install SAP Fiori Tools Extension Pack
-  - Install yeoman
+  - [Install Cloud Foundry CLI](install-cf-cli.md)
+  - [CAP Tools](cap-tools.md)
+  - [Install VS Code](install-vscode.md)
+  - [Install CAP Extension](vs-extension-cap-v2.md)
+  - [Install SAP Fiori Tools Extension Pack](vs-extension-fiori-elements.md)
+  - [Install yeoman](yeoman.md)
 - [Getting Started](getting-started.md)
-  - [My Bookshop Project](my-bookshop-project.md)
+  - [Build a CAP Service - My Bookshop](my-bookshop-project.md)
     - [Install VS Code extension](vs-extension-cap.md)
     - [Set up new project](set-up-new-project.md)
     - [Define your first service](define-service-my-bookshop.md)
@@ -21,7 +21,16 @@
     - [Add SQLite Persistant database](add-persistent-db-mybookshop.md)
     - [Test the service with Postman](test-with-postman.md)
     - [Add Custom logic to the service](add-custom-logic-mybookshop.md)
-  - [Another new project coming up]
+- [End to End Scenario- Risk Management](risk-management/risk-and-mitigation.md)
+  - Create CAP Based Application
+    - [Initialize Project](risk-management/initialize-project.md)
+    - [Add Data Model](risk-management/add-risk-and-mitigation-data-model.md)
+    - [Add Service Definition](risk-management/add-service-risk-management.md)
+    - [Add Initial Mockdata to service](risk-management/add-initial-mock-data-risk-management.md)
+    - Test the Service
+  - Create an SAP Fiori Elements Based UI
+    - Generate UI with Fiori Elements
+    - OData Annotations
 - Concepts
   - [Aspect](aspect.md)
   - [Domain Model](domain-model.md)

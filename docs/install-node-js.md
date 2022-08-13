@@ -13,3 +13,5 @@ This should return you the output of the Node JS version, if it is already insta
 If you don't have Node JS runtime, go to the offical [Node JS - Downloads](https://nodejs.org/en/download/) Site.
 Download as per your operating system. Use the LTS ( Long term support ) version of the Node JS for Stability.
 Make sure you install the correct bit version as per your operating system.
+
+> Node.js v14.15 or higher is required for @sap/cds.

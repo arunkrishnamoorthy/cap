@@ -18,7 +18,12 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
 
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
-
+    <style>
+        :root {
+            --docsifytabs-border-color: #ededed;
+            --docsifytabs-tab-highlight-color: #42b983;
+        }
+    </style>
 </head>
 
 <body>
@@ -53,7 +58,14 @@
             },
             plugins: [
 
-            ]
+            ],
+            tabs: {
+                persist: true,      // default
+                sync: true,      // default
+                theme: 'material', // default
+                tabComments: true,      // default
+                tabHeadings: true       // default
+            }
         }
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
@@ -65,6 +77,8 @@
     <script src="//unpkg.com/docsify-copy-code@2"></script>
     <script src="//unpkg.com/docsify-copy-code"></script>
     <script src="//unpkg.com/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+
 
 </body>
 
