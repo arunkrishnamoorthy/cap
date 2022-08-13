@@ -22,5 +22,6 @@ http://localhost:4004/catalog
 http://localhost:4004/catalog/$metadata
 ```
 
-<img src="/assets/images/service-metadata-bookshop.png" width="700" />
+<img src="./assets/images/service-metadata-bookshop.png" width="700" />
+
 
