@@ -10,4 +10,8 @@ Service Path:
 http://localhost:4004/catalog
 ```
 
+Service Metadata:
 
+```
+http://localhost:4004/catalog/$metadata
+```
