@@ -20,6 +20,11 @@
     - [Add initial data](add-initial-data-mybookshop.md)
     - [Add SQLite Persistant database](add-persistent-db-mybookshop.md)
     - [Test the service with Postman](test-with-postman.md)
+      - [Service Metadata](service-metadata-mybookshop.md)
+      - [Get Entityset](get-entityset-mybookshop.md)
+      - [Get Entity](get-entity-mybookshop.md)
+      - [Method:POST](create-entity-bookshop.md)
+      - [Method:PUT](update-entity-bookshop.md)
     - [Add Custom logic to the service](add-custom-logic-mybookshop.md)
 - [End to End Scenario- Risk Management](risk-management/risk-and-mitigation.md)
   - Create CAP Based Application
