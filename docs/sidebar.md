@@ -43,3 +43,8 @@
   - [Localization](localization.md)
   - [Namespaces](namespaces.md)
 - [Create Basic App](create-basic-app.md)
+- CLI tools
+  - [CF Commands](cloud-foundry-command.md)
+  - [CAP Cli](cap-command-line.md)
+- Troubleshooting 
+  - [Debugging a CAP Application](troubleshooting/debugging-cap-application.md)
