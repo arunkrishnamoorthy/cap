@@ -48,3 +48,4 @@
   - [CAP Cli](cap-command-line.md)
 - Troubleshooting 
   - [Debugging a CAP Application](troubleshooting/debugging-cap-application.md)
+  - [Logging & Remote Debugging](logging-and-remote-debugging.md)
