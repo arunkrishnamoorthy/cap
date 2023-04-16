@@ -1,5 +1,10 @@
 # Debugging a CAP Application. 
 
+***Update***
+In the CDS Project, in the folder .vscode, a launch.json file is already created with the configuration required for debugging. 
+***End of update***
+
+
 To debug the CAP application, first a launch.json file needs to be created in the workspace directory of the business application studio. 
 
 To create the launch.json file, in the left toolbar panel, go to the Debug Perspective. 

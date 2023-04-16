@@ -51,6 +51,10 @@
   - [Entity and Types](entity-and-types.md)
   - [Localization](localization.md)
   - [Namespaces](namespaces.md)
+- Query Language 
+  - [Introduction](query-language/introduction.md)
+  - [CQL - Fluent API](query-language/cds-ql-fluent-api.md)
+  - [SELECT](query-language/select.md)
 - CLI tools
   - [CF Commands](cloud-foundry-command.md)
   - [CAP Cli](cap-command-line.md)
